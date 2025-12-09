@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureVision – CCTV & Security Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+
+
+  <!-- ==== MAIN CONTENT WRAPPER ==== -->
+  <div class="main-wrapper">
+
+    <!-- Top Utility Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-links">
+          <a href="#about">About Us</a>
+          <a href="#careers">Working With Us</a>
+        </div>
+        <div class="top-actions">
+          <a href="#" class="pill-link">Live Chat</a>
+          <a href="https://wa.me/911234567890" target="_blank" class="pill-link">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header / Navbar -->
+    <header class="main-header">
+      <div class="container nav-inner">
+        <div class="logo">
+          <div class="logo-mark">SV</div>
+          <div class="logo-text">
+            <span class="logo-title">Sequertech CCTV</span>
+            <span class="logo-subtitle">Security & Surveillance</span>
+          </div>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li class="has-dropdown">
+              <a href="#products.html">Products</a>
+              <ul class="dropdown">
+                <a href="products.html#ip">Network Cameras</a>
+                <a href="products.html#nvr">DVR / NVR</a>
+                <a href="products.html#smart">Video Door Phones</a>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="#solutions">Solutions</a>
+              <ul class="dropdown">
+                <li><a href="#solutions">Banking</a></li>
+                <li><a href="#solutions">Retail</a></li>
+                <li><a href="#solutions">Safe City</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="#support">Support</a>
+              <ul class="dropdown">
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#support">Technical Videos</a></li>
+                <li><a href="#support">FAQs</a></li>
+              </ul>
+            </li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#contact">Partner Connect</a></li>
+          </ul>
+          <a href="#contact" class="btn btn-sm nav-cta">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Next-Gen Surveillance</p>
+          <h1>Smart CCTV & Security Solutions for Every Space</h1>
+          <p class="hero-subtitle">
+            Protect homes, offices, and critical infrastructure with our advanced
+            IP cameras, recorders, and AI-powered monitoring solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Explore Products</a>
+            <a href="#solutions" class="btn btn-outline">View Solutions</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="hero-meta-number">10K+</span>
+              <span class="hero-meta-label">Installations</span>
+            </div>
+            <div>
+              <span class="hero-meta-number">150+</span>
+              <span class="hero-meta-label">Cities Covered</span>
+            </div>
+            <div>
+              <span class="hero-meta-number">24/7</span>
+              <span class="hero-meta-label">Tech Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card main">
+            <div class="hero-camera-head"></div>
+            <div class="hero-camera-body">
+              <div class="hero-lens-glow"></div>
+            </div>
+            <div class="hero-tag">4K Ultra HD</div>
+          </div>
+          <div class="hero-stats-card">
+            <p class="hero-stats-title">Live Monitoring</p>
+            <p class="hero-stats-value">97% uptime</p>
+            <div class="hero-stats-bars">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="hero-badge">AI Analytics • Motion Alerts • Remote Access</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Top Product Categories</h2>
+          <p>
+            A complete range of cameras, recorders, and accessories crafted for
+            homes, businesses, and large-scale projects.
+          </p>
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab-btn active" data-tab="all">All</button>
+          <button class="tab-btn" data-tab="cameras">Cameras</button>
+          <button class="tab-btn" data-tab="recorders">Recorders</button>
+          <button class="tab-btn" data-tab="smart">Smart Devices</button>
+        </div>
+
+        <div class="cards-grid" id="productGrid">
+          <!-- Items are filtered via JS using data-category -->
+          <article class="card product-card" data-category="cameras">
+            <div class="card-icon circle-icon">IP</div>
+            <h3>Network Cameras</h3>
+            <p>
+              High-resolution IP cameras with night vision, WDR, and remote viewing.
+            </p>
+            <ul class="chip-list">
+              <li>2 MP – 8 MP</li>
+              <li>PoE</li>
+              <li>Outdoor / Indoor</li>
+            </ul>
+            <a href="#" class="card-link">View models</a>
+          </article>
+
+          <article class="card product-card" data-category="cameras">
+            <div class="card-icon circle-icon">AHD</div>
+            <h3>Analog HD Cameras</h3>
+            <p>
+              Cost-effective CCTV cameras for legacy and hybrid surveillance setups.
+            </p>
+            <ul class="chip-list">
+              <li>2.4 MP</li>
+              <li>5 MP</li>
+              <li>4K</li>
+            </ul>
+            <a href="#" class="card-link">View models</a>
+          </article>
+
+          <article class="card product-card" data-category="recorders">
+            <div class="card-icon circle-icon">NVR</div>
+            <h3>Network Video Recorders</h3>
+            <p>
+              Powerful NVRs with AI event search, RAID storage, and cloud backup.
+            </p>
+            <ul class="chip-list">
+              <li>4 / 8 / 16 Ch</li>
+              <li>Up to 4K</li>
+              <li>H.265+</li>
+            </ul>
+            <a href="#" class="card-link">View models</a>
+          </article>
+
+          <article class="card product-card" data-category="recorders">
+            <div class="card-icon circle-icon">DVR</div>
+            <h3>Digital Video Recorders</h3>
+            <p>
+              Hybrid DVRs supporting AHD, TVI, CVI, and analog cameras in one box.
+            </p>
+            <ul class="chip-list">
+              <li>4 / 8 / 16 Ch</li>
+              <li>Mobile App</li>
+              <li>Cloud P2P</li>
+            </ul>
+            <a href="#" class="card-link">View models</a>
+          </article>
+
+          <article class="card product-card" data-category="smart">
+            <div class="card-icon circle-icon">HOME</div>
+            <h3>Smart Wi-Fi Cameras</h3>
+            <p>
+              Plug-and-play Wi-Fi cameras with 2-way audio, motion alerts, and cloud.
+            </p>
+            <ul class="chip-list">
+              <li>App Control</li>
+              <li>Pan / Tilt</li>
+              <li>SD Card</li>
+            </ul>
+            <a href="#" class="card-link">View models</a>
+          </article>
+
+          <article class="card product-card" data-category="smart">
+            <div class="card-icon circle-icon">VDP</div>
+            <h3>Video Door Phones</h3>
+            <p>
+              Secure entry with live video, door unlock, and visitor history logs.
+            </p>
+            <ul class="chip-list">
+              <li>Indoor Unit</li>
+              <li>Outdoor Panel</li>
+              <li>Door Lock</li>
+            </ul>
+            <a href="#" class="card-link">View models</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section section-alt" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <h2>Industry Solutions We Serve</h2>
+          <p>
+            Flexible, scalable security tailored for different environments and use-cases.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <article class="card solution-card">
+            <h3>Banking & Finance</h3>
+            <p>
+              High-security monitoring for branches, ATMs, and vaults with centralized control.
+            </p>
+            <ul>
+              <li>Transaction-linked video</li>
+              <li>24/7 recording & alerts</li>
+              <li>Compliance-ready storage</li>
+            </ul>
+          </article>
+
+          <article class="card solution-card">
+            <h3>Retail & Malls</h3>
+            <p>
+              Prevent theft, understand footfall, and secure cash counters with analytics.
+            </p>
+            <ul>
+              <li>Heat maps & people counting</li>
+              <li>Smart POS monitoring</li>
+              <li>Centralized management</li>
+            </ul>
+          </article>
+
+          <article class="card solution-card">
+            <h3>Smart Cities</h3>
+            <p>
+              City-wide coverage for traffic junctions, public spaces, and critical areas.
+            </p>
+            <ul>
+              <li>License plate recognition</li>
+              <li>Traffic violation alerts</li>
+              <li>Command center view</li>
+            </ul>
+          </article>
+
+          <article class="card solution-card">
+            <h3>Hospitals & Campuses</h3>
+            <p>
+              Protect patients, staff, and students with indoor and outdoor surveillance.
+            </p>
+            <ul>
+              <li>IP-based surveillance</li>
+              <li>Access control integration</li>
+              <li>Visitor tracking</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Products / Carousel-like scroll -->
+    <section class="section" id="trending">
+      <div class="container">
+        <div class="section-header">
+          <h2>Trending Items</h2>
+          <p>Popular products for your next security project.</p>
+        </div>
+
+        <div class="trending-strip" id="trendingStrip">
+          <article class="tiny-card">
+            <h4>SV-NC-4K-D23</h4>
+            <p>4K Dome IP Camera</p>
+            <span class="tiny-badge">Best Seller</span>
+          </article>
+
+          <article class="tiny-card">
+            <h4>SV-NVR-32CH-PRO</h4>
+            <p>32-Channel AI NVR</p>
+            <span class="tiny-badge">AI Inside</span>
+          </article>
+
+          <article class="tiny-card">
+            <h4>SV-AHD-5MP-BUL</h4>
+            <p>5 MP Bullet AHD Camera</p>
+          </article>
+
+          <article class="tiny-card">
+            <h4>SV-HOME-PT-CAM</h4>
+            <p>Wi-Fi PT Camera</p>
+            <span class="tiny-badge">Smart Home</span>
+          </article>
+
+          <article class="tiny-card">
+            <h4>SV-VDP-KIT</h4>
+            <p>Video Door Phone Kit</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support & Downloads -->
+    <section class="section section-alt" id="support">
+      <div class="container">
+        <div class="section-header">
+          <h2>Support & Downloads</h2>
+          <p>
+            Access tools, firmware, and resources to keep your security system up-to-date.
+          </p>
+        </div>
+
+        <div class="support-grid">
+          <article class="card support-card" id="downloads">
+            <h3>Downloads</h3>
+            <ul class="link-list">
+              <li><a href="#">Firmware</a></li>
+              <li><a href="#">Software & CMS</a></li>
+              <li><a href="#">User Manuals</a></li>
+              <li><a href="#">Certificates</a></li>
+            </ul>
+          </article>
+
+          <article class="card support-card">
+            <h3>Tools</h3>
+            <ul class="link-list">
+              <li><a href="#">Lens Calculator</a></li>
+              <li><a href="#">Bandwidth Calculator</a></li>
+              <li><a href="#">Storage Estimator</a></li>
+            </ul>
+          </article>
+
+          <article class="card support-card">
+            <h3>Help & Training</h3>
+            <ul class="link-list">
+              <li><a href="#">Technical Videos</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Troubleshooting Guides</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training & Partner -->
+    <section class="section" id="training">
+      <div class="container training-layout">
+        <div class="training-info">
+          <h2>Installer Training Programs</h2>
+          <p>
+            Become a certified SecureVision partner with hands-on surveillance training
+            and advanced configuration workshops.
+          </p>
+          <ul class="check-list">
+            <li>Onsite & online workshops</li>
+            <li>Certification for engineers & partners</li>
+            <li>Access to beta features & updates</li>
+          </ul>
+        </div>
+        <div class="training-card">
+          <h3>Partner Connect</h3>
+          <p>Join our partner ecosystem for exclusive benefits.</p>
+          <ul class="chip-list">
+            <li>Priority Support</li>
+            <li>Lead Sharing</li>
+            <li>Marketing Collaterals</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Become a Partner</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <div class="logo footer-logo">
+            <div class="logo-mark">SV</div>
+            <div class="logo-text">
+              <span class="logo-title">SecureVision</span>
+              <span class="logo-subtitle">Security & Surveillance</span>
+            </div>
+          </div>
+          <p class="footer-about">
+            SecureVision provides end-to-end surveillance solutions, from cameras to
+            cloud, for homes, businesses, and smart cities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>
+            <p>
+            Company owned by-Vaibhav Singh<br />
+            Website created by-Dev Singh
+          </p>
+            Email: <a href="mailto:svaibhav1012005singh@gmail.com">vaibhav1012005singh@gmail.com</a><br />
+            Phone: <a href="tel:+917459041530">+91-7459041530</a>
+          </p>
+          <p>
+            2nd Floor, Tech Park,<br />
+            New Delhi, India
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#training">Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <form class="contact-form" onsubmit="event.preventDefault();">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea rows="3" placeholder="How can we help?" required></textarea>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© <span id="year"></span> Sequretech-owned by Vaibhav Singh,website by-Dev Singh. All rights reserved.</p>
+          <p class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Terms of Use</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- END .main-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
